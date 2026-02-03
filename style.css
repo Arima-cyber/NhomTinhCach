@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 10px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+main {
+    padding: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* MÀU DISC */
+.D { background: #c0392b; }
+.I { background: #f1c40f; color: black; }
+.S { background: #27ae60; }
+.C { background: #2980b9; }
