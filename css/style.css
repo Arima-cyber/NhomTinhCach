@@ -1,0 +1,55 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; background: #f5f6fa; color: #2c3e50; }
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+nav a {
+  margin: 10px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+/* DISC colors */
+.d { background: #e74c3c; }
+.i { background: #f39c12; }
+.s { background: #2ecc71; }
+.c { background: #3498db; }
+
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  animation: fade 0.6s ease;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 8px solid;
+  border-radius: 8px;
+}
+
+.d-theme .card { border-color: #e74c3c; }
+.i-theme .card { border-color: #f39c12; }
+.s-theme .card { border-color: #2ecc71; }
+.c-theme .card { border-color: #3498db; }
+
+h1, h2 { margin-top: 0; }
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
